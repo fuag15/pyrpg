@@ -1,0 +1,38 @@
+Currently, creatures should be in a directory reflecting CREATURE_TYPE and be named CREATURE_SUBTYPE:
+
+/creatures/CREATURE_TYPE/CREATURE_SUBTYPE
+eg
+/creatures/dragons/green
+
+modifiers should be in /creatures/modifiers/MODIFIER_NAME such as:
+
+/creatures/modifiers/dire
+
+
+In definition files:
+var = value
+
+action: [dependancy1, dependancy2, ..., dependancyN]
+    description = This describes the action
+    aliases = AlternateName1, ... AlternateNameN
+    roll = XdY [(+, -, *, /) N 
+ 
+
+Example contents of a CREATURE_SUBTYPE:
+
+size = huge
+description = This is a creature of some sort
+
+full attack: short sword, short sword
+    description =  full round action
+    alias = full
+    
+
+short sword:
+    description = an attack with a short sword
+    alias = shortsword, sw
+    damage = 2d8 +1
+
+
+
+
