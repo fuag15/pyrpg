@@ -16,7 +16,7 @@ action: [dependancy1, dependancy2, ..., dependancyN]
     description = This describes the action
     aliases = AlternateName1, ... AlternateNameN
     roll = XdY [(+, -, *, /) N 
- 
+    arbitraryVar = value
 
 Example contents of a CREATURE_SUBTYPE:
 
