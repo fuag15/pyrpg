@@ -1,0 +1,15 @@
+The rolls themselves should happen between 3 classes: Die, DiceBag and Roll
+
+
+DiceBag:
+	responsible for parsing roll calls
+	parses formatted information to Die class
+	
+Die Specification:
+	responsible for random number calls
+	allows specification of random number generator/engine
+	Generates Roll objects
+
+Roll:
+	Stores information on a particular roll call, including relevant environment context
+	overloaded __str__ function gives "pretty" roll results
