@@ -1,0 +1,38 @@
+Base class structure:
+
+<FUNCTION> : OUR_NAME => DESCRIP
+
+parser : => Parses config files and passes thier vars to the generator
+
+generator : => Creates object_instances from generator
+
+object_instance : => stores a specific instance
+
+dmbot : => iterates over main game object_instances to negotiate turns, actions etc
+
+Thats it for the main structure, everything else is a subclass of object_instance... here are the subclasses
+
+map : => Defines the grid shape etc, how many real units per grid
+
+terrain: => defines overloaded functions by name, sight, movement_type, etc..
+
+area : => generated map from config file, stores locations on grid
+
+creature : => has attributes for the creature
+
+encounter : => stores rank, creatures, etc
+
+party : => stores the current player characters
+
+player_character : => well... duh
+
+population : => stores different stats on things for random encounters etc
+
+scenario : => stores over arching people / places to keep track of for the dm
+
+major_character : => stores any important figures in the scenario
+
+major_group : => stores major groups in scenario
+
+motivation : => attaches to groups and characters and town
+
